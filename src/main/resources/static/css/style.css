@@ -1,0 +1,75 @@
+/* Geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Seção inicial */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Formulário */
+#formPesquisa input {
+    padding: 10px 15px;
+    width: 250px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formPesquisa button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formPesquisa button:hover {
+    background: #0056b3;
+}
+
+/* Espaçamento geral */
+section {
+    margin-bottom: 60px;
+}
+
+/* Rodapé */
+footer {
+    background: #eaeaea;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 70px;
+    font-size: 14px;
+    color: #444;
+}
