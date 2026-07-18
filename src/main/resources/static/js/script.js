@@ -4,10 +4,21 @@ function botaoBusca() {
 
     const inputTermo = document.getElementById("inputTermo").value;
 
-    document.getElementById("resultado")
-        .innerHTML = "Você pesquisou: " + inputTermo;  
+     const url = `http://localhost:9090/api/pesquisar?palavra=${inputTermo}`;
+     console.log(url);
 
-        console.log("JS carregou!");
+   fetch(url)
+    .then(resposta => resposta.json())
+    .then(dados => {
 
+       
+        document.getElementById("resultado").innerHTML = `
+        <h2>${dados.palavra}</h2>
+        <p>${dados.significado}</p>
+`;
+
+    });
+
+    
 }
 
