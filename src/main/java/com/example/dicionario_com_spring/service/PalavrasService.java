@@ -23,5 +23,11 @@ public class PalavrasService {
         return palavrasRepository.findByPalavra(palavra)
                                  .orElse(null);
     }
+
+    public Palavras cadastrar(Palavras palavra) {
+        return palavrasRepository.save(palavra);
+
+    }
+
 }
 

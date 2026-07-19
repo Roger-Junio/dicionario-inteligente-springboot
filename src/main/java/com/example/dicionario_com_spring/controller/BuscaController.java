@@ -2,6 +2,8 @@
 package com.example.dicionario_com_spring.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,5 +31,11 @@ public class BuscaController {
         // Ele apenas pede ao Service para pesquisar.
         return palavrasService.buscar(palavra);
     }
+
+    @PostMapping("/cadastrar") 
+    public Palavras cadastrar(@RequestBody Palavras palavras) {
+            return palavrasService.cadastrar(palavras);
+    }
+
 }
 
